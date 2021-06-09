@@ -1,8 +1,8 @@
 #include <iostream>
 
 // Your code must compile.
-#include "rational.hpp"
-#include "rational.hpp"
+#include "rational.cpp"
+#include "rational.cpp"
 
 using namespace std;
 
