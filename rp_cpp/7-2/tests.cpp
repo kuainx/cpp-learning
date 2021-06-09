@@ -1,8 +1,8 @@
 #include <iostream>
 
 // Your code must compile.
-#include "rational.hpp"
-#include "rational.hpp"
+#include "rational.cpp"
+#include "rational.cpp"
 #include "matrix.hpp"
 #include "matrix.hpp"
 
@@ -29,7 +29,7 @@ void TestDouble()
         0.2 0.2 0.2 0.8
         -0.6 0 0.2 1    */
   std::cout << std::endl;
-  // matrix.GaussJordan();
+  matrix.GaussJordan();
   matrix.Print();
   /*  0.2 0.2 0.2 0.8
         0 0.6 0.8 3.4
@@ -57,7 +57,7 @@ void TestRational()
         1/5 1/5 1/5 4/5
         -3/5 0 1/5 1    */
   std::cout << std::endl;
-  // matrix.GaussJordan();
+  matrix.GaussJordan();
   matrix.Print();
   /*  1/5 1/5 1/5 4/5
         0 3/5 4/5 17/5

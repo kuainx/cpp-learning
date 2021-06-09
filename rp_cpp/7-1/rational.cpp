@@ -104,7 +104,11 @@ bool Rational::operator<(Rational that) const
 }
 std::ostream &operator<<(std::ostream &os, const Rational &number)
 {
-  os << number.m_numerator << '/' << number.m_denominator;
+  os << number.m_numerator;
+  if (number.m_denominator != 1)
+  {
+    os << '/' << number.m_denominator;
+  }
   return os;
 }
 
