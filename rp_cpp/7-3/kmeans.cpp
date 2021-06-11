@@ -8,7 +8,10 @@ double Point::Distance(const Point &other) const
 
 double Point::DistanceS(const Point &other) const
 {
-  return pow(x - other.x, 2) + pow(y - other.y, 2);
+  // return pow(x - other.x, 2) + pow(y - other.y, 2);
+  double dx = x - other.x;
+  double dy = y - other.y;
+  return dx * dx + dy * dy;
 }
 
 std::istream &operator>>(std::istream &is, Point &pt)
@@ -91,6 +94,7 @@ std::vector<index_t> Kmeans::Run(int maxIterations)
     }
     if (!update)
     {
+      currIteration = iter + 1;
       break;
     }
     // std::cout << "iter = " << iter << std::endl;
